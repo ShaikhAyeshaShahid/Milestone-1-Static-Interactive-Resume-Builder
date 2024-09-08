@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Get all the proficiency bars and sliders
   const dartProficiencyBar = document.getElementById('dartProficiency') as HTMLElement;
   const dartSlider = document.getElementById('dartSlider') as HTMLInputElement;
 
@@ -12,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const androidNativeProficiencyBar = document.getElementById('androidNativeProficiency') as HTMLElement;
   const androidNativeSlider = document.getElementById('androidNativeSlider') as HTMLInputElement;
 
-  // Update proficiency bar width based on slider input for each skill
   dartSlider.addEventListener('input', () => {
     dartProficiencyBar.style.width = dartSlider.value + '%';
   });
